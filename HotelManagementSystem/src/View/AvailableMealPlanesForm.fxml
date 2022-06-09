@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="428.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvailableMealPlanesFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="437.0" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="0.05238095238095242" endY="1.0" startX="0.04285714285714286">
+               <stops>
+                  <Stop color="#0c1346" />
+                  <Stop color="#152275c4" offset="0.7854406130268199" />
+                  <Stop color="#152275c4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="124.0" layoutY="5.0" opacity="0.37" prefHeight="51.0" prefWidth="399.0" style="-fx-background-color: #456e80;" textFill="#456e8066">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="139.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Meal Planes">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="11.0" layoutY="63.0" opacity="0.57" prefHeight="3.0" prefWidth="612.0" />
+      <ImageView fitHeight="348.0" fitWidth="200.0" layoutX="10.0" layoutY="75.0" opacity="0.61" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/LocalMeal01.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="348.0" fitWidth="200.0" layoutX="218.0" layoutY="75.0" opacity="0.61" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/chineseMeal.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <Separator layoutX="212.0" layoutY="75.0" orientation="VERTICAL" prefHeight="348.0" prefWidth="6.0" />
+      <Separator layoutX="420.0" layoutY="75.0" orientation="VERTICAL" prefHeight="348.0" prefWidth="6.0" />
+      <ImageView fitHeight="348.0" fitWidth="200.0" layoutX="426.0" layoutY="75.0" opacity="0.61" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/frenchMeal.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="14.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local Meal">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="225.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chinese Meal">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="431.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="French Meal">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="53.0" layoutX="152.0" layoutY="88.0" startX="-15.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="152.0" layoutY="93.0" startX="-15.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="152.0" layoutY="98.0" startX="-15.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="353.0" layoutY="87.0" startX="23.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="354.0" layoutY="92.0" startX="21.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="354.0" layoutY="97.0" startX="21.0" stroke="WHITE" />
+      <Line endX="53.0" layoutX="570.0" layoutY="86.0" startX="-4.9296875" stroke="WHITE" />
+      <Line endX="53.0" layoutX="570.0" layoutY="91.0" startX="-4.9296875" stroke="WHITE" />
+      <Line endX="53.0" layoutX="570.0" layoutY="96.0" startX="-4.9296875" stroke="WHITE" />
+      <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rice &amp; Curry">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="31.0" layoutY="142.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="115.0" layoutY="143.0" startX="-22.0" />
+      <Text layoutX="156.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 350/=">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="31.0" layoutY="159.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="115.0" layoutY="160.0" startX="-22.0" />
+      <Text layoutX="156.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 250/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egg">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="31.0" layoutY="178.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="115.0" layoutY="179.0" startX="-22.0" />
+      <Text layoutX="156.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 180/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="94.0" layoutX="107.0" layoutY="197.0" opacity="0.5" startX="-82.0" />
+      <Text layoutX="18.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Others">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="40.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Rice">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="30.0" layoutY="237.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="112.0" layoutY="238.0" startX="-6.0" />
+      <Text layoutX="156.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 25/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="40.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String Hop;pers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="30.0" layoutY="254.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="115.0" layoutY="255.0" startX="31.0" />
+      <Text layoutX="155.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 45/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="40.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoppers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="30.0" layoutY="272.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="155.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 45/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="113.0" layoutY="272.0" startX="-6.0" />
+      <Text fontSmoothingType="LCD" layoutX="39.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pittu">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="30.0" layoutY="291.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="154.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 35/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="112.0" layoutY="291.0" startX="-6.0" />
+      <Text fontSmoothingType="LCD" layoutX="38.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Those">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="31.0" layoutY="309.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="153.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 30/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="111.0" layoutY="310.0" startX="-6.0" />
+      <Line endX="94.0" layoutX="107.0" layoutY="331.0" opacity="0.5" startX="-82.0" />
+      <Text layoutX="18.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drinks">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="39.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tea">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="29.0" layoutY="366.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="154.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 30/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="112.0" layoutY="366.0" startX="-6.0" />
+      <Text fontSmoothingType="LCD" layoutX="39.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coffe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="29.0" layoutY="384.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="154.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 30/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="112.0" layoutY="384.0" startX="-6.0" />
+      <Text fontSmoothingType="LCD" layoutX="39.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kolakenda">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="29.0" layoutY="402.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="154.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 30/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="38.0" layoutX="112.0" layoutY="402.0" startX="2.0" />
+      <Text layoutX="227.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fride Rice">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="141.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="321.0" layoutY="142.0" startX="-22.0" />
+      <Text layoutX="360.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 450/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="159.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="320.0" layoutY="160.0" startX="-22.0" />
+      <Text layoutX="361.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 300/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="94.0" layoutX="317.0" layoutY="209.0" opacity="0.5" startX="-82.0" />
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egg">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="178.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="320.0" layoutY="179.0" startX="-22.0" />
+      <Text layoutX="361.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 250/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mixed">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="281.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="320.0" layoutY="282.0" startX="-22.0" />
+      <Text layoutX="361.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 750/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="227.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Noodles">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="264.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="320.0" layoutY="265.0" />
+      <Text layoutX="361.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 450/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="246.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="236.0" layoutY="247.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="321.0" layoutY="248.0" startX="-19.0" />
+      <Text layoutX="360.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 550/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="94.0" layoutX="315.0" layoutY="294.0" opacity="0.5" startX="-82.0" />
+      <Text layoutX="227.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soups">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="245.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="235.0" layoutY="330.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="319.0" layoutY="331.0" startX="-3.0" />
+      <Text layoutX="360.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 250/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="245.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="235.0" layoutY="346.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="319.0" layoutY="347.0" startX="-22.0" />
+      <Text layoutX="360.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 350/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="245.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomato">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="235.0" layoutY="362.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="319.0" layoutY="363.0" startX="-22.0" />
+      <Text layoutX="360.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 250/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="245.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egg &amp; Noodles">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="235.0" layoutY="378.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="319.0" layoutY="379.0" startX="24.9638671875" />
+      <Text layoutX="360.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 300/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="245.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sea Food">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="235.0" layoutY="396.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="319.0" layoutY="397.0" startX="-7.0" />
+      <Text layoutX="360.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 450/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="437.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sandwiches">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egg">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="141.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="531.0" layoutY="142.0" startX="-22.0" />
+      <Text layoutX="572.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 450/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="158.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="533.0" layoutY="159.0" startX="-22.0" />
+      <Text layoutX="572.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 550/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese &amp;Tomato" wrappingWidth="118.248046875">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="175.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="572.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 550/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="452.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ham &amp; Cheese" wrappingWidth="98.96386513113976">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="445.0" layoutY="190.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="571.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 600/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="29.0" layoutX="541.0" layoutY="191.0" startX="15.0" />
+      <Text fontSmoothingType="LCD" layoutX="452.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special Club" wrappingWidth="98.96386513113976">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="445.0" layoutY="208.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="571.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 600/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="29.0" layoutX="541.0" layoutY="208.0" startX="-3.0" />
+      <Text layoutX="435.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burgers">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="94.0" layoutX="517.0" layoutY="224.0" opacity="0.5" startX="-82.0" />
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egg">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="254.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="531.0" layoutY="255.0" startX="-22.0" />
+      <Text layoutX="572.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 250/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="271.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="533.0" layoutY="272.0" startX="-22.0" />
+      <Text layoutX="572.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 300/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken Submarine">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="289.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="572.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 400/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="453.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hot Dog">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="446.0" layoutY="305.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="533.0" layoutY="306.0" startX="-22.0" />
+      <Text layoutX="572.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 650/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="435.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special Packages">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="452.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Combo Pack">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Circle layoutX="445.0" layoutY="361.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="38.0" layoutX="528.0" layoutY="362.0" startX="12.0" />
+      <Text layoutX="569.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 1500/=">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="453.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Two Submarines &amp; Chicken Sandwiches with Pepsi.)" wrappingWidth="157.41015625" />
+      <Line endX="94.0" layoutX="519.0" layoutY="321.0" opacity="0.5" startX="-82.0" />
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="18.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="536.0" layoutY="18.0" onAction="#homeButonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+   </children>
+</AnchorPane>

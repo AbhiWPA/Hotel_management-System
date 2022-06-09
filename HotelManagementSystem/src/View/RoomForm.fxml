@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="451.0" stroke="BLACK" strokeType="INSIDE" width="649.0" AnchorPane.bottomAnchor="-51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-45.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.19523809523809524">
+               <stops>
+                  <Stop color="#0d2340" />
+                  <Stop color="#0d2340" offset="0.01532567049808429" />
+                  <Stop color="#033465f7" offset="0.2707666785164118" />
+                  <Stop color="#ff3333c2" offset="0.6829403167831892" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="14.0" layoutY="100.0" opacity="0.11" stroke="BLACK" strokeType="INSIDE" width="573.0" />
+      <Text layoutX="179.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms Settings">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="13.0" layoutY="45.0" prefHeight="4.0" prefWidth="573.0" />
+      <ImageView fitHeight="291.0" fitWidth="573.0" layoutX="13.0" layoutY="104.0" opacity="0.35" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/sampleRoom01.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="433.0" layoutY="120.0" onAction="#btnAddOnAction" ripplerFill="BLACK" style="-fx-background-color: #07075C;" text="+ Add New" textFill="#fffffff5" />
+      <JFXButton buttonType="RAISED" layoutX="434.0" layoutY="161.0" onAction="#changeRoomOnAction" prefHeight="25.0" prefWidth="75.0" ripplerFill="BLACK" style="-fx-background-color: #07075C;" text="Change" textFill="#fffffff5" />
+      <Text fill="#e85e5e" fontSmoothingType="LCD" layoutX="12.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Availability :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="163.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="252.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="343.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Triple">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="436.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quad">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Separator layoutX="235.0" layoutY="52.0" opacity="0.2" orientation="VERTICAL" prefHeight="19.0" prefWidth="0.5" />
+      <Separator layoutX="322.0" layoutY="53.0" opacity="0.2" orientation="VERTICAL" prefHeight="19.0" prefWidth="0.5" />
+      <Separator layoutX="411.0" layoutY="51.0" opacity="0.2" orientation="VERTICAL" prefHeight="19.0" prefWidth="0.5" />
+      <Label layoutX="152.0" layoutY="75.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #4848F3;" text="       ">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="75.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #4848F3;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="75.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #4848F3;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="75.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #4848F3;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="29.0" layoutY="9.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="10.0" onAction="#homeButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+      <Text fx:id="txtSingle" layoutX="175.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05" />
+      <Text fx:id="txtDouble" layoutX="275.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
+      <Text fx:id="txtQuad" layoutX="451.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05" />
+      <Text fx:id="txtTriple" layoutX="359.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05" />
+      <Separator layoutX="499.0" layoutY="53.0" opacity="0.2" orientation="VERTICAL" prefHeight="19.0" prefWidth="0.5" />
+      <Text layoutX="518.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="511.0" layoutY="74.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #f83636;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="txtTotal" layoutX="536.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room No">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="210.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtfRoomNo" focusColor="BLACK" labelFloat="true" layoutX="31.0" layoutY="149.0" promptText="Room No" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cbxRoomType" focusColor="BLACK" layoutX="214.0" layoutY="149.0" prefHeight="25.0" prefWidth="135.0" promptText="Room Type" unFocusColor="BLACK" />
+      <TableView fx:id="tblRoom" layoutX="22.0" layoutY="195.0" prefHeight="193.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="colRoomNo" prefWidth="194.0" text="Room No" />
+          <TableColumn fx:id="colRoomType" prefWidth="199.0" text="Room Type" />
+            <TableColumn fx:id="colOption" prefWidth="159.0" text="Option" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

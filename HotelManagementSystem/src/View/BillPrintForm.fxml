@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillPrintFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="437.0" layoutX="-1.0" layoutY="-14.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="0.18571428571428572" endY="1.0" startX="0.19523809523809524" startY="0.3619047619047619">
+               <stops>
+                  <Stop color="#767c83" />
+                  <Stop color="#a6acb2" offset="0.4628905478532209" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="240.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Print Bill">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="13.0" layoutY="48.0" opacity="0.49" prefHeight="4.0" prefWidth="605.0" />
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="15.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="530.0" layoutY="15.0" onAction="#homeButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="290.0" layoutX="14.0" layoutY="78.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="596.0" />
+      <TableView fx:id="tblBill" layoutX="25.0" layoutY="153.0" prefHeight="208.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="95.0" text="Date" />
+          <TableColumn fx:id="colDescription" prefWidth="233.0" text="Description" />
+            <TableColumn fx:id="colChanges" prefWidth="107.0" text="Changes(Rs.)" />
+            <TableColumn fx:id="colBalance" prefWidth="138.0" text="Balance(Rs.)" />
+        </columns>
+      </TableView>
+      <Text fill="#b20000" layoutX="219.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean Hotel">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="237.0" layoutY="116.0" text="blueOcealHotel@gmail.com" />
+      <JFXButton buttonType="RAISED" layoutX="513.0" layoutY="377.0" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #1d335d;" text="Print" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerDetailsFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="437.0" layoutX="-9.0" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="0.18571428571428572" endY="1.0" startX="0.19523809523809524" startY="0.3619047619047619">
+               <stops>
+                  <Stop color="#04234a" />
+                  <Stop color="#1d4575" offset="0.46289054785322103" />
+                  <Stop color="#7c5151" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="136.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer Details">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Text>
+      <Separator layoutX="19.0" layoutY="65.0" prefHeight="4.0" prefWidth="587.0" />
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="29.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="522.0" layoutY="30.0" onAction="#homeButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+      <Text fill="#fcfcfc" layoutX="23.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Cusomer Number  :" wrappingWidth="194.681640625">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="cusNotxt" focusColor="BLACK" labelFloat="true" layoutX="244.0" layoutY="87.0" prefHeight="25.0" prefWidth="224.0" unFocusColor="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="287.0" layoutX="36.0" layoutY="129.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="566.0" />
+      <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="52.0" layoutY="188.0" prefHeight="25.0" prefWidth="140.0" promptText="New Customer Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="52.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cange Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtNic" focusColor="BLACK" labelFloat="true" layoutX="210.0" layoutY="188.0" prefHeight="25.0" prefWidth="82.0" promptText="New NIC" unFocusColor="BLACK">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="207.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change NIC">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtTel" focusColor="BLACK" labelFloat="true" layoutX="335.0" layoutY="188.0" prefHeight="25.0" prefWidth="101.0" promptText="New Tel. Number" unFocusColor="BLACK">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="332.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Tel. No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtMail" focusColor="BLACK" labelFloat="true" layoutX="469.0" layoutY="188.0" prefHeight="25.0" prefWidth="129.0" promptText="New E-Mail" unFocusColor="BLACK">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="469.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtAddress" focusColor="BLACK" labelFloat="true" layoutX="43.0" layoutY="299.0" prefHeight="25.0" prefWidth="101.0" promptText="New Address" unFocusColor="BLACK">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="183.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Room Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXComboBox layoutX="182.0" layoutY="299.0" prefHeight="25.0" prefWidth="121.0" unFocusColor="BLACK" />
+      <Text layoutX="347.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Meal Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="478.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXComboBox layoutX="347.0" layoutY="301.0" prefHeight="25.0" prefWidth="121.0" unFocusColor="BLACK" />
+      <JFXComboBox layoutX="479.0" layoutY="301.0" prefHeight="25.0" prefWidth="107.0" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="496.0" layoutY="361.0" onAction="#changebtnOnAction" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000568;" text="Change" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

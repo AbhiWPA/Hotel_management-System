@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <Rectangle height="441.0" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="0.1142857142857143" endY="1.0" startX="0.11904761904761904" startY="0.45714285714285713">
+               <stops>
+                  <Stop color="#000a1a" />
+                  <Stop color="#000a1a" offset="0.2298850574712643" />
+                  <Stop color="#000a1a5b" offset="0.8888888888888888" />
+                  <Stop color="#000a1a5b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="#ffd1d1" fontSmoothingType="LCD" layoutX="145.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to System">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="21.0" layoutY="57.0" prefHeight="1.0" prefWidth="596.0" />
+      <Button fx:id="roomsbtn" layoutX="237.0" layoutY="108.0" mnemonicParsing="false" onAction="#roomsOnAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: rgba(207, 202, 202, 1);" text="Rooms">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="mealPlanesbtn" layoutX="237.0" layoutY="198.0" mnemonicParsing="false" onAction="#mealPlanesOnAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: rgba(207, 202, 202, 1);" text="Meal Planes" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="incomeReportbtn" layoutX="227.0" layoutY="297.0" mnemonicParsing="false" onAction="#incomeReportOnAction" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: rgba(207, 202, 202, 1);" text="Income Reports">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="257.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Room Planes" />
+      <Text fill="WHITE" layoutX="255.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Meal Planes" />
+      <Text fill="WHITE" layoutX="212.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annual &amp; Monthly Income Reports" />
+      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="13.0" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #b89b1b;" text="Log Out" />
+   </children>
+</AnchorPane>

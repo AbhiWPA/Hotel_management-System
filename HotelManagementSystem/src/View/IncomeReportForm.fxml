@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="437.0" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#010d17" />
+                  <Stop color="#303e8ab2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="#750000" layoutX="189.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Reports">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="11.0" layoutY="61.0" prefHeight="6.0" prefWidth="609.0" />
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="19.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="512.0" layoutY="20.0" onAction="#homeButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+      <Text fill="WHITE" layoutX="234.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly &amp; Annually Reports" />
+      <BarChart fx:id="brChart" layoutX="26.0" layoutY="254.0" prefHeight="178.0" prefWidth="580.0" style="-fx-background-color: #b6e7e5;" title="Monthly Income Report">
+        <xAxis>
+          <CategoryAxis fx:id="brMonth" prefHeight="18.0" prefWidth="520.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="brIncome" side="LEFT">
+               <tickLabelFont>
+                  <Font size="12.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+      </BarChart>
+      <LineChart fx:id="lncrtAnual" layoutX="26.0" layoutY="67.0" prefHeight="178.0" prefWidth="580.0" style="-fx-background-color: #b6e7e5;" title="Anual Report from 2012">
+        <xAxis>
+          <CategoryAxis fx:id="yearSide" animated="false" autoRanging="false" prefHeight="24.0" prefWidth="240.0" side="BOTTOM">
+               <tickLabelFont>
+                  <Font size="44.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="incomeSide" prefHeight="162.0" prefWidth="44.0" side="LEFT">
+              <tickLabelFont>
+                  <Font size="12.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+      </LineChart>
+      <Separator layoutX="9.0" layoutY="246.0" opacity="0.28" prefHeight="6.0" prefWidth="609.0" />
+      <Line endX="-65.0" endY="-17.0" layoutX="194.0" layoutY="171.0" startX="-107.0" startY="6.0" stroke="#ff00d4" />
+      <Line endX="-29.5" endY="-21.0" layoutX="219.0" layoutY="159.0" startX="-89.29287719726562" startY="-6.707122802734375" stroke="#ff00d4" />
+      <Line endX="-51.5" layoutX="341.0" layoutY="120.0" startX="-100.0" stroke="#ff00d4" />
+      <Line endX="-50.5" endY="-5.0" layoutX="393.0" layoutY="115.0" startX="-101.0" startY="6.0" stroke="#ff00d4" />
+      <Line endX="-51.5" endY="14.0" layoutX="444.0" layoutY="114.0" startX="-102.5" startY="-5.0" stroke="#ff00d4" />
+      <Line endX="-54.5" endY="16.0" layoutX="494.0" layoutY="127.0" startX="-100.0" stroke="#ff00d4" />
+      <Line endX="-21.0" endY="-12.0" layoutX="505.0" layoutY="161.0" startX="-64.0" startY="-19.0" stroke="#ff00d4" />
+      <Line endX="-100.0" endY="-98.0" layoutX="229.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="289.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="339.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="391.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="442.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="493.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="539.0" layoutY="205.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="583.0" layoutY="206.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-98.0" layoutX="634.0" layoutY="206.0" startX="-100.0" />
+      <Line endX="-12.5" layoutX="547.0" layoutY="168.0" startX="-64.0" startY="-19.0" stroke="#ff00d4" />
+      <Line endX="-38.5" endY="-21.0" layoutX="279.0" layoutY="140.0" startX="-90.5" startY="-1.0" stroke="#ff00d4" />
+      <Label layoutX="115.0" layoutY="219.0" rotate="-90.0" text="2013" />
+      <Label layoutX="175.0" layoutY="220.0" rotate="-90.0" text="2014" />
+      <Label layoutX="226.0" layoutY="220.0" rotate="-90.0" text="2015" />
+      <Label layoutX="279.0" layoutY="220.0" rotate="-90.0" text="2016" />
+      <Label layoutX="329.0" layoutY="220.0" rotate="-90.0" text="2017" />
+      <Label layoutX="381.0" layoutY="220.0" rotate="-90.0" text="2018" />
+      <Label layoutX="426.0" layoutY="220.0" rotate="-90.0" text="2019" />
+      <Label layoutX="469.0" layoutY="220.0" rotate="-90.0" text="2020" />
+      <Label layoutX="521.0" layoutY="220.0" rotate="-90.0" text="2021" />
+      <Label layoutX="73.0" layoutY="220.0" rotate="-90.0" text="2012" />
+   </children>
+</AnchorPane>

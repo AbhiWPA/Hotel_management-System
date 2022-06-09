@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewRoomDetailsFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="440.0" stroke="BLACK" strokeType="INSIDE" width="639.0">
+         <fill>
+            <LinearGradient endX="0.18571428571428572" endY="1.0" startX="0.19523809523809524" startY="0.3619047619047619">
+               <stops>
+                  <Stop color="#04234a" />
+                  <Stop color="#1d4575" offset="0.46289054785322103" />
+                  <Stop color="#7c5151" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="218.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms Details">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Text>
+      <Separator layoutX="26.0" layoutY="59.0" prefHeight="4.0" prefWidth="587.0" />
+      <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="20.0" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="532.0" layoutY="20.0" onAction="#homeButtonOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #b89b1b;" text="Home" />
+      <TableView fx:id="tblRooms" layoutX="25.0" layoutY="109.0" prefHeight="200.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="colRoomNo" prefWidth="85.0" text="Room No" />
+          <TableColumn fx:id="colRoomType" minWidth="0.0" prefWidth="105.0" text="Room Type" />
+            <TableColumn fx:id="colCbx" prefWidth="186.0" text="Room In Maintenance or not" />
+            <TableColumn fx:id="colBook" prefWidth="210.0" text="Booked or Not" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

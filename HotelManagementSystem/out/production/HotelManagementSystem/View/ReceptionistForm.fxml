@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="437.0" stroke="BLACK" strokeType="INSIDE" width="632.0">
+         <fill>
+            <LinearGradient endX="0.07142857142857138" endY="1.0" startX="0.08571428571428572">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="#653e3e" offset="0.4862345459572618" />
+                  <Stop color="#b5b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="#ffd1d1" fontSmoothingType="LCD" layoutX="155.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to System">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="8.0" layoutY="67.0" prefHeight="3.0" prefWidth="614.0" />
+      <JFXButton buttonType="RAISED" layoutX="531.0" layoutY="23.0" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #b89b1b;" text="Log Out" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfdff" height="112.0" layoutX="13.0" layoutY="80.0" opacity="0.19" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+      <Text fill="WHITE" layoutX="28.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Availability :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Rooms">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#ffd1d1" fontSmoothingType="LCD" layoutX="155.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to System">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Separator layoutX="31.0" layoutY="67.0" prefHeight="1.0" prefWidth="596.0" />
+      <JFXButton buttonType="RAISED" layoutX="531.0" layoutY="23.0" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #b89b1b;" text="Log Out" />
+      <Text layoutX="203.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Rooms">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="350.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Triple Rooms">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="483.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quad Rooms">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="81.0" layoutY="152.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: rgba(207, 202, 202, 1);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="152.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: rgba(207, 202, 202, 1);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="152.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: rgba(207, 202, 202, 1);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="152.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: rgba(207, 202, 202, 1);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="219.0" onAction="#addNewCustomerOnAction" prefHeight="39.0" prefWidth="235.0" ripplerFill="BLACK" style="-fx-background-color: rgba(207, 202, 202, 1);" text="+ Add New Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="356.0" onAction="#viewRoomDetailsOnAction" prefHeight="39.0" prefWidth="235.0" ripplerFill="BLACK" style="-fx-background-color: rgba(207, 202, 202, 1);" text="View Room Dtails">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="285.0" onAction="#updateCustomerDetailsOnAction" prefHeight="39.0" prefWidth="235.0" ripplerFill="BLACK" style="-fx-background-color: rgba(207, 202, 202, 1);" text="Update Customer Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="txtSingle" layoutX="93.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.13671875" />
+      <Text fx:id="txtDouble" layoutX="237.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.13671875" />
+      <Text fx:id="txtTriple" layoutX="379.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.13671875" />
+      <Text fx:id="txtQuad" layoutX="511.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.13671875" />
+   </children>
+</AnchorPane>
